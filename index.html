@@ -21,7 +21,7 @@
                         <img src="bg/profile.png" alt="profile" class="photo">
                     </div>
                     <div class="name">
-                        <H2>مهدی محمدی</H2>
+                        <h2>مهدی محمدی</h2>
                         <span>برنامه نویس</span>
                     </div>
                     <div class="discription">
@@ -48,7 +48,6 @@
                         </svg>
                         <p>شماره تماس:</p>
                     </span>
-
                     <span>09031011105</span>
                 </div>
                 <div class="detail email">
@@ -63,8 +62,7 @@
                         </svg>
                         <p>ایمیل:</p>
                     </span>
-
-                    <Span>Moxis8.7stream@gmail.com</Span>
+                    <span>Moxis8.7stream@gmail.com</span>
                 </div>
             </div>
         </aside>
@@ -160,39 +158,186 @@
             </div>
         </div>
         <div id="tab2" class="tab-content">
-
         </div>
+        <div class="skills">
+            <div class="skill-title">
+                <h2>مهارت های فنی</h2>
+            </div>
 
+            <nav class="nav-skills custom-nav-container">
+                <div class="all custom-tab" data-tab="all">
+                    <span>همه</span>
+                </div>
+                <div class="frontend custom-tab" data-tab="frontend">
+                    <span>فرانت اند</span>
+                </div>
+                <div class="backend custom-tab" data-tab="backend">
+                    <span>بک اند</span>
+                </div>
+                <div class="framework custom-tab" data-tab="framework">
+                    <span>فریم ورک</span>
+                </div>
+                <div class="tools custom-tab" data-tab="tools">
+                    <span>ابزار</span>
+                </div>
+                <div class="slider-part custom-highlight" id="highlight"></div>
+            </nav>
 
+            <div class="custom-tab-content custom-active" id="all">
+                <div class="languages">
+                    <div class="language">
+                        <img src="icon/python.png" alt="">
+                        <h3>PYTHON</h3>
+                        <progress value="30" max="100"></progress>
+                    </div>
+                    <div class="language">
+                        <img src="icon/javascript.png" alt="">
+                        <h3>JAVA SCRIPT</h3>
+                        <progress value="10" max="100"></progress>
+                    </div>
+                    <div class="language">
+                        <img src="icon/HTML5.png" alt="">
+                        <h3>HTML</h3>
+                        <progress value="60" max="100"></progress>
+                    </div>
+                    <div class="language">
+                        <img src="icon/css.png" alt="">
+                        <h3>CSS</h3>
+                        <progress value="80" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom-tab-content" id="frontend">
+                <div class="languages">
+                    <div class="language">
+                        <img src="icon/javascript.png" alt="">
+                        <h3>JAVA SCRIPT</h3>
+                        <progress value="10" max="100"></progress>
+                    </div>
+                    <div class="language">
+                        <img src="icon/HTML5.png" alt="">
+                        <h3>HTML</h3>
+                        <progress value="60" max="100"></progress>
+                    </div>
+                    <div class="language">
+                        <img src="icon/css.png" alt="">
+                        <h3>CSS</h3>
+                        <progress value="80" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom-tab-content" id="backend">
+                <div class="languages">
+                    <div class="language">
+                        <img src="icon/python.png" alt="">
+                        <h3>PYTHON</h3>
+                        <progress value="30" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom-tab-content" id="framework">
+                <div class="languages">
+                    <div class="language">
+                        <img src="icon/javascript.png" alt="">
+                        <h3>JAVASCRIPT</h3>
+                        <progress value="10" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom-tab-content" id="tools">
+                <div class="languages">
+                    <div class="language">
+                        <img src="icon/HTML5.png" alt="">
+                        <h3>HTML</h3>
+                        <progress value="60" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-
-
-
-
-
-
     <script>
-        const buttons = document.querySelectorAll('.nav');
-        const slider = document.querySelector('.slider');
-        const contents = document.querySelectorAll('.tab-content');
-        const firstButton = buttons[0];
-        slider.style.width = firstButton.offsetWidth + 'px';
-        slider.style.left = firstButton.offsetLeft + 'px';
+        // اسکریپت برای تب‌های اصلی (نمونه‌کارها و اطلاعات شخصی)
+const buttons = document.querySelectorAll('.nav');
+const slider = document.querySelector('.slider');
+const contents = document.querySelectorAll('.tab-content');
+const firstButton = buttons[0];
+slider.style.width = firstButton.offsetWidth + 'px';
+slider.style.left = firstButton.offsetLeft + 'px';
 
-        buttons.forEach(button => {
-            button.addEventListener('click', function () {
-                buttons.forEach(btn => btn.classList.remove('active'));
-                contents.forEach(content => content.classList.remove('active'));
+buttons.forEach(button => {
+    button.addEventListener('click', function () {
+        buttons.forEach(btn => btn.classList.remove('active'));
+        contents.forEach(content => content.classList.remove('active'));
 
-                this.classList.add('active');
-                const tabId = this.getAttribute('data-tab');
-                document.getElementById(tabId).classList.add('active');
+        this.classList.add('active');
+        const tabId = this.getAttribute('data-tab');
+        document.getElementById(tabId).classList.add('active');
 
-                slider.style.width = this.offsetWidth + 'px';
-                slider.style.left = this.offsetLeft + 'px';
-            });
-        });
+        slider.style.width = this.offsetWidth + 'px';
+        slider.style.left = this.offsetLeft + 'px';
+    });
+});
+
+// اسکریپت برای تب‌های مهارت‌ها و مرتب‌سازی نوارهای پیشرفت
+const skillButtons = document.querySelectorAll('.custom-tab');
+const skillSlider = document.querySelector('.custom-highlight');
+const skillContents = document.querySelectorAll('.custom-tab-content');
+const firstSkillButton = skillButtons[0];
+
+skillSlider.style.width = firstSkillButton.offsetWidth + 'px';
+skillSlider.style.left = firstSkillButton.offsetLeft + 'px';
+
+// تابع برای مرتب‌سازی نوارهای پیشرفت
+function sortProgressBars(container) {
+    const languages = container.querySelector('.languages');
+    const progressItems = Array.from(languages.querySelectorAll('.language'));
+
+    // مرتب‌سازی بر اساس مقدار progress از زیاد به کم
+    progressItems.sort((a, b) => {
+        const valueA = parseInt(a.querySelector('progress').value);
+        const valueB = parseInt(b.querySelector('progress').value);
+        return valueB - valueA; // نزولی
+    });
+
+    // خالی کردن و دوباره اضافه کردن آیتم‌ها به ترتیب جدید
+    languages.innerHTML = '';
+    progressItems.forEach(item => languages.appendChild(item));
+}
+
+// مرتب‌سازی اولیه برای تب فعال
+skillContents.forEach(content => {
+    if (content.classList.contains('custom-active')) {
+        sortProgressBars(content);
+        content.style.display = 'block';
+    } else {
+        content.style.display = 'none';
+    }
+});
+
+// رویداد کلیک برای تب‌ها
+skillButtons.forEach(button => {
+    button.addEventListener('click', function () {
+        skillButtons.forEach(btn => btn.classList.remove('custom-active'));
+        skillContents.forEach(content => content.style.display = 'none');
+
+        this.classList.add('custom-active');
+        const tabId = this.getAttribute('data-tab');
+        const activeContent = document.getElementById(tabId);
+        activeContent.style.display = 'block';
+        activeContent.classList.add('custom-active');
+
+        // مرتب‌سازی نوارهای پیشرفت برای تب فعال
+        sortProgressBars(activeContent);
+
+        skillSlider.style.width = this.offsetWidth + 'px';
+        skillSlider.style.left = this.offsetLeft + 'px';
+    });
+});
     </script>
 </body>
 
