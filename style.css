@@ -1,5 +1,5 @@
 @font-face {
-    font-family: dana;
+    font-family: "dana";
     src:url(font/Dana-Medium.ttf);
 }
 
@@ -8,9 +8,6 @@ a{
     color: rgb(0, 0, 0);
 }
 
-:root{
-    --font : "dana";
-}
 *{
     margin: 0%;
     padding: 0%;
@@ -54,6 +51,7 @@ aside{
     min-width: 85%;
     width: 75%;
     margin-top: 40px;
+    font-family: "dana";
     border-radius: 1.5rem;
     background-image: url(bg/baner.jpg);
     background-repeat: no-repeat;
@@ -62,7 +60,6 @@ aside{
 }
 .side{
     color: white;
-    font-family: var(--font);
     text-align: center;
 }
 .about-me{
@@ -124,7 +121,7 @@ aside{
 .contact{
     margin: 20px 50px;
     text-align: center;
-    font-family: var(--font);
+    font-family: "dana";
     font-weight: 300;
     font-size: larger;
     color: white;
@@ -155,7 +152,7 @@ nav{
     margin: 30px 0;
     border-radius: 2rem;
     color: white;
-    font-family: var(--font);
+    font-family: "dana";
     align-items: center;
 }
 .primary-nav{
@@ -222,7 +219,7 @@ nav{
 .info-project{
     width: 75%;
     color: rgba(255, 255, 255, 0.66);
-    font-family: var(--font);
+    font-family: "dana";
     font-weight: 200;
     display: flex;
     flex-direction: column;
@@ -274,7 +271,7 @@ nav{
     color: white;
     margin: 40px 0 20px;
     padding-bottom: 5px;
-    font-family: var(--font);
+    font-family: "dana";
     font-size: large;
     border-bottom: white solid 1px ;
     width: 70%;
@@ -340,7 +337,7 @@ nav{
     width: 65px;
 }
 .language h3{
-    font-family: var(--font);
+    font-family: "dana";
     color: white;
     width: 80%;
     text-align: center;
