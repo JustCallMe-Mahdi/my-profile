@@ -1,0 +1,85 @@
+@media screen and (max-width:375px) {
+    .discription{
+        font-size: 15px;
+        margin: 0px 30px;
+    }
+    .name{
+        font-size: medium;
+    }
+    .name h2{
+        font-size: 23px;
+    }
+    .my-photo{
+        width: 100px;
+        height: 100px;
+    }
+    .photo{
+        width: 90px;
+        height: 90px;
+    }
+    .about-me{
+        font-size: 24px;
+    }
+    .fab{
+        font-size: 25px;
+    }
+    .contact{
+        font-size: medium;
+        margin: 10px 20px;
+    }
+    .detail{
+        font-size: small;
+    }
+    .email{
+        font-size: smaller;
+    }
+    .Portfolio{
+        height: 110px;
+    }
+    .Portfolio .image-project img{
+        width: 80%;
+        margin-left: 10px;
+    }
+    .info-project h3 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .info-project hr{
+        width: 40%;
+    }
+    .info-project span{
+        font-size: 10px;
+    }
+    .info-project{
+        margin-left: 10px;
+    }
+    .web svg{
+        width: 13px;
+    }
+    .skill-title{
+        font-size: medium;
+    }
+    .skill-title h2{
+        font-weight: 400;
+    }
+    .custom-tab{
+        font-size: 13px;
+    }
+    .custom-nav-container{
+        width: 105%;
+    }
+    .language{
+        width: 100px;
+        height: 130px;
+    }
+    .language img{
+        width: 50px;
+    }
+    .language h3{
+        font-weight: 500;
+        margin: 3px 0;
+    }
+}
+
+
+/* mobile */

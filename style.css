@@ -1,0 +1,362 @@
+@font-face {
+    font-family: "dana-m";
+    src:url(font/Dana-Medium.ttf);
+}
+@font-face {
+    font-family: "dana-r";
+    src:url(font/Dana-Regular.ttf);
+}
+@font-face {
+    font-family: "dana-";
+    src:url(font/Dana-Medium.ttf);
+}
+@font-face {
+    font-family: "dana-";
+    src:url(font/Dana-Medium.ttf);
+}
+
+
+a{
+    color: rgb(0, 0, 0);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(bg/bg.png);
+    background-clip: content-box;
+    background-repeat: inherit;
+    background-position: 0 0;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    min-width: 70%;
+    max-width: 90%;
+    height: auto;
+    color: black;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.container::before{
+    border-radius: 2.5rem;
+    width: 90%;
+    height: 2000px;
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.275);
+    z-index: -1;
+    backdrop-filter: blur(10px);
+}
+
+aside{
+    min-width: 85%;
+    width: 75%;
+    margin-top: 40px;
+    font-family: "dana";
+    border-radius: 1.5rem;
+    background-image: url(bg/baner.jpg);
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.447);
+    background-size: 100% 220px;
+}
+.side{
+    color: white;
+    text-align: center;
+}
+.about-me{
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 28px;
+}
+.profile{
+    margin-top: 100px;
+}
+.photo{
+    border-radius: 50%;
+    width: 120px;
+}
+.my-photo{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    border-radius: 50%;
+    height: 130px;
+    background: linear-gradient(135deg, #3320c7, #5b27cb);
+}
+.name{
+    margin: 10px;
+    font-size: larger;
+}
+.name h2{
+    font-size: larger;
+    font-size: 30px;
+    font-weight: 600;
+}
+.name span{
+    position: relative;
+    bottom: 5px;
+    font-weight: 400;
+    opacity: 0.6;
+}
+.discription{
+    font-weight: 200;
+    margin: 10px 60px;
+    font-size: larger;
+    opacity: 0.8;
+}
+.social-media{
+    width: 70%;
+    height: 50px;
+    margin:15px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.fab{
+    filter: invert(100%);
+    font-size: 35px;
+    margin: 10px;
+}
+.contact{
+    margin: 20px 50px;
+    text-align: center;
+    font-family: "dana";
+    font-weight: 300;
+    font-size: larger;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+}
+.detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: medium;
+    margin: 10px 0;
+}
+.detail span{
+    display: flex;
+}
+.detail span svg{
+    padding: 0 5px;
+}
+nav{
+    width: 85%;
+    height: 45px;
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    background-color: #242426;
+    margin: 30px 0;
+    border-radius: 2rem;
+    color: white;
+    font-family: "dana";
+    align-items: center;
+}
+.primary-nav{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ghost-nav{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.slider {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: #4645D3;
+    transition: left 0.6s ease-in-out, width 0.2s ease-in-out;
+    z-index: 0;
+    border-radius: 50px;
+}
+.nav span{
+    z-index: 2;
+}
+.nav{
+    cursor: pointer;
+}
+
+.Portfolio{
+    background-color:rgba(0, 0, 0, 0.447);
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 2rem;
+    position: relative;
+}
+.tab-content{
+    min-width: 85%;
+    width: 75%;
+    position: relative;
+}
+.tabrik{
+    margin-top: 15px;
+}
+.image-project{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dasresi .image-project img{
+    filter: drop-shadow(#4645D3 0 0  2rem);
+}
+.tabrik .image-project img{
+    filter: drop-shadow(#e2a80b 0 0  2rem);
+}
+.info-project{
+    width: 75%;
+    color: rgba(255, 255, 255, 0.66);
+    font-family: "dana";
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+.info-project h3 {
+    font-weight:500;
+    font-size: 23px;
+    color: white;
+}
+.info-project span{
+    font-size: 13px;
+    margin: 7px 0 4px 0;
+}
+.info-project hr{
+    width: 30%;
+}
+.web svg{
+    width: 18px;
+}
+.web{
+    display: flex;
+}
+.web span{
+    margin: 4px 0;
+}
+.arrow-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow-right svg{
+    width: 50px;
+    height: 35px;
+    margin-right: 5px;
+}
+
+
+
+.skills{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-title{
+    color: white;
+    margin: 40px 0 20px;
+    padding-bottom: 5px;
+    font-family: "dana";
+    font-size: large;
+    border-bottom: white solid 1px ;
+    width: 70%;
+    text-align: center;
+}
+.nav-skills{
+    margin: 0 0 30px;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+}
+.custom-tab{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex: 1;
+    transition: color 0.3s ease;
+}
+.slider-part{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background-color: #4645D3; /* رنگ بنفش */
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+.custom-tab span{
+    position: relative;
+    z-index: 2;
+}
+
+
+.custom-tab-content{
+    width: 100%;
+    margin: auto;
+}
+.languages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.language{
+    width: 120px;
+    height: 150px;
+    margin: 0 10px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color:rgba(0, 0, 0, 0.447);
+    border-radius: 1rem;
+}
+.language img{
+    width: 65px;
+}
+.language h3{
+    font-family: "dana";
+    color: white;
+    width: 80%;
+    text-align: center;
+    line-height: 1;
+    margin: 5px 0 0;
+}
+.language progress{
+    width: 70px;
+    height: 5px;
+}
