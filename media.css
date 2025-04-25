@@ -1,4 +1,4 @@
-@media screen and (max-width:375px) {
+@media screen and (max-width:425px) {
     .discription{
         font-size: 15px;
         margin: 0px 30px;
@@ -83,3 +83,30 @@
 
 
 /* mobile */
+
+
+/* laptop */
+
+@media screen and (min-width: 768px) {
+    .container{
+        flex-direction: row-reverse;
+        align-items: start;
+        height: 800px;
+        overflow: auto;
+    }
+    .container::before{
+        height: 95%;
+        width: 100%;
+    }
+    .other{
+        width: 716px;
+    }
+    .side-menu{
+        width: 317px;
+        margin-left: 40px;
+    }
+    .language{
+        width: 90px;
+        height: 100px;
+    }
+}
